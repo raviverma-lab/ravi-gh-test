@@ -1,0 +1,46 @@
+{
+  "id" : "47912467-3b2a-4527-bd2c-d4085f482e9b",
+  "key" : "git_test_app",
+  "appPrefix" : "git_test_app",
+  "name" : "git_test_app",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "999e0796-361f-4b62-b854-de3a34a5ecff",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC",
+    "grants" : [ {
+      "groupId" : "11111111-1111-1111-1111-111111111111",
+      "permission" : 2
+    } ]
+  },
+  "ownerId" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+  "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+  "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+  "audienceVersion" : null,
+  "createdAt" : "2026-04-28T11:03:54.325Z",
+  "updatedAt" : "2026-04-28T11:14:38.041Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "grants" : {
+    "canUse" : false,
+    "canView" : true,
+    "canExecute" : true,
+    "canEdit" : true,
+    "canDeploy" : true,
+    "canManage" : true
+  },
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "ravi_qa_ds"
+}
