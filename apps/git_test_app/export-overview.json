@@ -1,0 +1,8 @@
+{
+  "appName" : "git_test_app",
+  "environment" : "DEVELOPMENT",
+  "provider" : "AWS",
+  "exportDate" : "2026-04-30T08:14:49.729Z",
+  "sourceVersion" : "9.1.0.07",
+  "exportBy" : "syntasa_service_account"
+}
