@@ -1,5 +1,5 @@
 {
-  "lastUserSave" : "2026-04-30T08:00:31.000Z",
+  "lastUserSave" : "2026-04-30T09:13:18.000Z",
   "id" : "94a4cfc3-a296-425f-bad8-888705cf1f80",
   "name" : "Development",
   "description" : null,
@@ -8,18 +8,18 @@
     "nodes" : [ {
       "objectCategoryKey" : "CONNECTION",
       "objectTypeKey" : "GIT",
-      "left" : -704,
+      "left" : -725,
       "state" : "CONFIGURED",
       "label" : "fed-uat-github",
-      "top" : -127,
+      "top" : -113,
       "type" : "objectType",
       "id" : "30ef4b6f-1b5d-4e98-8978-2164c20dc4e6",
       "nodeType" : "objectType"
     }, {
       "id" : "523884cb-b555-4af5-a508-7b1c00b5b7a6",
-      "top" : -168.04290312081724,
-      "left" : -511.5726191560494,
-      "label" : "Spark Processor",
+      "top" : -87,
+      "left" : -467,
+      "label" : "github",
       "ports" : [ {
         "id" : "523884cb-b555-4af5-a508-7b1c00b5b7a6.input",
         "type" : "multiInput"
@@ -33,7 +33,7 @@
     }, {
       "objectCategoryKey" : "DATASET",
       "objectTypeKey" : "TABLE",
-      "left" : -311.5726191560494,
+      "left" : -258,
       "state" : null,
       "ports" : [ {
         "id" : "f5bf6ec3-c590-49ba-9807-348fcffe900b.input",
@@ -43,35 +43,117 @@
         "type" : "multiOutput"
       } ],
       "label" : "git_test_app_Output",
-      "top" : -168.04290312081724,
+      "top" : -82,
       "id" : "f5bf6ec3-c590-49ba-9807-348fcffe900b",
       "nodeType" : "objectType"
     }, {
       "objectCategoryKey" : "CONNECTION",
       "objectTypeKey" : "GIT",
-      "left" : -712.898751855766,
+      "left" : -730,
       "state" : "CONFIGURED",
       "label" : "fed_uat_gl_pat",
-      "top" : -263.37595238122486,
+      "top" : -346,
       "type" : "objectType",
       "id" : "aafd30c2-eca1-4845-8659-c9539e9d07a4",
       "nodeType" : "objectType"
     }, {
       "objectCategoryKey" : "CONNECTION",
       "objectTypeKey" : "GIT",
-      "left" : -684,
+      "left" : -737,
       "state" : "CONFIGURED",
       "label" : "fed-uat-bb-token",
-      "top" : -407,
+      "top" : -481,
       "type" : "objectType",
       "id" : "45db5f09-a786-4f98-9dc1-2bef7b44ded4",
       "nodeType" : "objectType"
+    }, {
+      "id" : "4ce2fecf-6a56-4e00-a0ee-90ab3dca3750",
+      "top" : -268.5093117363489,
+      "left" : -515.3136538637519,
+      "label" : "gitlab",
+      "ports" : [ {
+        "id" : "4ce2fecf-6a56-4e00-a0ee-90ab3dca3750.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "4ce2fecf-6a56-4e00-a0ee-90ab3dca3750.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "state" : "FAILED"
+    }, {
+      "objectCategoryKey" : "DATASET",
+      "objectTypeKey" : "TABLE",
+      "left" : -275,
+      "state" : null,
+      "ports" : [ {
+        "id" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15.output",
+        "type" : "multiOutput"
+      } ],
+      "label" : "git_test_app_Output-2",
+      "top" : -270,
+      "id" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15",
+      "nodeType" : "objectType"
+    }, {
+      "id" : "c4960fed-961e-44ad-9d7b-6e7cfe417ef0",
+      "top" : -477,
+      "left" : -486,
+      "label" : "Bitbukcet",
+      "ports" : [ {
+        "id" : "c4960fed-961e-44ad-9d7b-6e7cfe417ef0.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "c4960fed-961e-44ad-9d7b-6e7cfe417ef0.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "state" : "INVALID"
+    }, {
+      "objectCategoryKey" : "DATASET",
+      "objectTypeKey" : "TABLE",
+      "left" : -292,
+      "state" : null,
+      "ports" : [ {
+        "id" : "7720401b-0af7-48fd-9923-1f583626f67c.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "7720401b-0af7-48fd-9923-1f583626f67c.output",
+        "type" : "multiOutput"
+      } ],
+      "label" : "git_test_app_Output-3",
+      "top" : -442,
+      "id" : "7720401b-0af7-48fd-9923-1f583626f67c",
+      "nodeType" : "objectType"
+    }, {
+      "objectCategoryKey" : "CONNECTION",
+      "objectTypeKey" : "GIT",
+      "left" : -712,
+      "state" : "CONFIGURED",
+      "label" : "fed-uat-gh-ssh",
+      "top" : 18,
+      "type" : "objectType",
+      "id" : "88e73ac9-f279-4209-bcfc-ce9c319bc118",
+      "nodeType" : "objectType"
+    }, {
+      "left" : -757.5802360299381,
+      "top" : -218.5934009550379,
+      "id" : "742e4231-c06b-4717-8df6-3ff175b31942",
+      "nodeType" : "objectType",
+      "label" : "fed-uat-gl-ssh",
+      "objectCategoryKey" : "CONNECTION",
+      "objectTypeKey" : "GIT",
+      "type" : "objectType",
+      "state" : "CONFIGURED"
     } ],
     "edges" : [ {
       "source" : "30ef4b6f-1b5d-4e98-8978-2164c20dc4e6.output",
       "target" : "523884cb-b555-4af5-a508-7b1c00b5b7a6.input",
       "data" : {
-        "id" : "fac62852-4974-4019-a67e-2ebce0d1dd91",
+        "id" : "df4da476-d042-4550-b28f-77bf49e823ca",
         "type" : "default"
       }
     }, {
@@ -80,16 +162,38 @@
       "data" : { }
     }, {
       "source" : "aafd30c2-eca1-4845-8659-c9539e9d07a4.output",
-      "target" : "523884cb-b555-4af5-a508-7b1c00b5b7a6.input",
+      "target" : "4ce2fecf-6a56-4e00-a0ee-90ab3dca3750.input",
       "data" : {
         "id" : "b6de9d1a-c301-4b8d-b340-b434947eea29",
         "type" : "default"
       }
     }, {
       "source" : "45db5f09-a786-4f98-9dc1-2bef7b44ded4.output",
-      "target" : "523884cb-b555-4af5-a508-7b1c00b5b7a6.input",
+      "target" : "c4960fed-961e-44ad-9d7b-6e7cfe417ef0.input",
       "data" : {
         "id" : "bbf2a028-fae2-49d8-94bf-fda59bee50bb",
+        "type" : "default"
+      }
+    }, {
+      "source" : "4ce2fecf-6a56-4e00-a0ee-90ab3dca3750.output",
+      "target" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15.input",
+      "data" : { }
+    }, {
+      "source" : "c4960fed-961e-44ad-9d7b-6e7cfe417ef0.output",
+      "target" : "7720401b-0af7-48fd-9923-1f583626f67c.input",
+      "data" : { }
+    }, {
+      "source" : "88e73ac9-f279-4209-bcfc-ce9c319bc118.output",
+      "target" : "523884cb-b555-4af5-a508-7b1c00b5b7a6.input",
+      "data" : {
+        "id" : "737a177f-b33f-4105-8105-3be9d7088797",
+        "type" : "default"
+      }
+    }, {
+      "source" : "742e4231-c06b-4717-8df6-3ff175b31942.output",
+      "target" : "4ce2fecf-6a56-4e00-a0ee-90ab3dca3750.input",
+      "data" : {
+        "id" : "127bdf78-fcde-4f9d-9b13-ff7331c98b5d",
         "type" : "default"
       }
     } ],
@@ -114,6 +218,30 @@
       "id" : "45db5f09-a786-4f98-9dc1-2bef7b44ded4.input"
     }, {
       "id" : "45db5f09-a786-4f98-9dc1-2bef7b44ded4.output"
+    }, {
+      "id" : "4ce2fecf-6a56-4e00-a0ee-90ab3dca3750.input"
+    }, {
+      "id" : "4ce2fecf-6a56-4e00-a0ee-90ab3dca3750.output"
+    }, {
+      "id" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15.input"
+    }, {
+      "id" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15.output"
+    }, {
+      "id" : "c4960fed-961e-44ad-9d7b-6e7cfe417ef0.input"
+    }, {
+      "id" : "c4960fed-961e-44ad-9d7b-6e7cfe417ef0.output"
+    }, {
+      "id" : "7720401b-0af7-48fd-9923-1f583626f67c.input"
+    }, {
+      "id" : "7720401b-0af7-48fd-9923-1f583626f67c.output"
+    }, {
+      "id" : "88e73ac9-f279-4209-bcfc-ce9c319bc118.input"
+    }, {
+      "id" : "88e73ac9-f279-4209-bcfc-ce9c319bc118.output"
+    }, {
+      "id" : "742e4231-c06b-4717-8df6-3ff175b31942.input"
+    }, {
+      "id" : "742e4231-c06b-4717-8df6-3ff175b31942.output"
     } ]
   },
   "environment" : "DEVELOPMENT",
@@ -127,11 +255,23 @@
       "processTypeKey" : "SPARK_PROCESSOR",
       "defaultRuntimeId" : "71da2703-7ed2-478a-a262-a2cb98ad2009",
       "templateIconKey" : "SPARK_PROCESSOR"
+    }, {
+      "graphNodeId" : "0540682b-ad69-4cc4-a04c-1860c8b1dbad",
+      "name" : "gitlab",
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "defaultRuntimeId" : null,
+      "templateIconKey" : "SPARK_PROCESSOR"
+    }, {
+      "graphNodeId" : "df0bedea-a14f-4ff5-992a-a6ef4e06e05b",
+      "name" : "Bitbukcet",
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "defaultRuntimeId" : null,
+      "templateIconKey" : "SPARK_PROCESSOR"
     } ],
     "interactiveMode" : false
   },
   "createdAt" : "2026-04-28T11:03:54.414Z",
-  "updatedAt" : "2026-04-30T08:09:56.373Z",
+  "updatedAt" : "2026-04-30T09:23:00.296Z",
   "app" : {
     "id" : "47912467-3b2a-4527-bd2c-d4085f482e9b",
     "key" : "git_test_app",
@@ -155,7 +295,7 @@
     "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
     "audienceVersion" : null,
     "createdAt" : "2026-04-28T11:03:54.325Z",
-    "updatedAt" : "2026-04-30T08:00:31.858Z",
+    "updatedAt" : "2026-04-30T09:13:18.190Z",
     "deletedAt" : null,
     "template" : {
       "name" : "Synthesizer Free Form",
@@ -171,9 +311,9 @@
     }
   },
   "graphNodes" : [ {
-    "id" : "b25341b8-48dd-41be-9349-8136a9811705",
-    "name" : "Spark Processor",
-    "appNodeId" : "523884cb-b555-4af5-a508-7b1c00b5b7a6",
+    "id" : "df0bedea-a14f-4ff5-992a-a6ef4e06e05b",
+    "name" : "Bitbukcet",
+    "appNodeId" : "c4960fed-961e-44ad-9d7b-6e7cfe417ef0",
     "workflowId" : "94a4cfc3-a296-425f-bad8-888705cf1f80",
     "objectTypeKey" : null,
     "processTypeKey" : "SPARK_PROCESSOR",
@@ -185,7 +325,7 @@
     "streamId" : null,
     "intelligenceHubId" : null,
     "displayGroupKey" : null,
-    "state" : "COMPLETED",
+    "state" : "INVALID",
     "parameters" : {
       "system" : {
         "isDeletable" : true
@@ -194,7 +334,7 @@
       "parameters" : {
         "language" : "PYTHON",
         "fileName" : null,
-        "sparkScript" : "print(\"With PAT\")\nconn = \"@InputConnection3\"\nconnectionName = synutils.connection().getConnectionParam(conn, \"connectionName\")\nconnectionType = synutils.connection().getConnectionParam(conn, \"connectionType\")\n\nrepoUrl = synutils.connection().getConnectionParam(conn, \"repoUrl\")\noauthToken = synutils.connection().getConnectionParam(conn, \"oauthToken\")\npersonalAccessToken = synutils.connection().getConnectionParam(conn, \"personalAccessToken\")\n\nsshKey = synutils.connection().getConnectionParam(conn, \"sshKey\")\nbranch = synutils.connection().getConnectionParam(conn, \"branch\")\nbasePath = synutils.connection().getConnectionParam(conn, \"basePath\")\nscmType = synutils.connection().getConnectionParam(conn, \"scmType\")\n\nprint(\"connectionName:\", connectionName)\nprint(\"connectionType:\", connectionType)\nprint(\"repoUrl:\", repoUrl)\nprint(\"oauthToken:\", oauthToken)\nprint(\"personalAccessToken:\", personalAccessToken)\nprint(\"sshKey:\", sshKey)\nprint(\"branch:\", branch)\nprint(\"basePath:\", basePath)\nprint(\"scmType:\", scmType)",
+        "sparkScript" : "print(\"With PAT\")\nconn = \"@InputConnection1\"\nconnectionName = synutils.connection().getConnectionParam(conn, \"connectionName\")\nconnectionType = synutils.connection().getConnectionParam(conn, \"connectionType\")\n\nrepoUrl = synutils.connection().getConnectionParam(conn, \"repoUrl\")\noauthToken = synutils.connection().getConnectionParam(conn, \"oauthToken\")\npersonalAccessToken = synutils.connection().getConnectionParam(conn, \"personalAccessToken\")\n\nsshKey = synutils.connection().getConnectionParam(conn, \"sshKey\")\nbranch = synutils.connection().getConnectionParam(conn, \"branch\")\nbasePath = synutils.connection().getConnectionParam(conn, \"basePath\")\nscmType = synutils.connection().getConnectionParam(conn, \"scmType\")\n\nprint(\"connectionName:\", connectionName)\nprint(\"connectionType:\", connectionType)\nprint(\"repoUrl:\", repoUrl)\nprint(\"oauthToken:\", oauthToken)\nprint(\"personalAccessToken:\", personalAccessToken)\nprint(\"sshKey:\", sshKey)\nprint(\"branch:\", branch)\nprint(\"basePath:\", basePath)\nprint(\"scmType:\", scmType)",
         "libraryConfigs" : [ {
           "name" : "",
           "version" : ""
@@ -203,34 +343,22 @@
         "customCondaScript" : null,
         "codeParams" : [ {
           "name" : "@InputConnection1",
-          "value" : "fed-uat-github",
-          "appNodeId" : "30ef4b6f-1b5d-4e98-8978-2164c20dc4e6",
+          "value" : "fed-uat-bb-token",
+          "appNodeId" : "45db5f09-a786-4f98-9dc1-2bef7b44ded4",
           "type" : "INPUT",
           "subType" : "CONNECTION"
         }, {
           "name" : "@OutputTable1",
           "value" : "@database.git_test_app_output",
-          "appNodeId" : "f5bf6ec3-c590-49ba-9807-348fcffe900b",
+          "appNodeId" : "7720401b-0af7-48fd-9923-1f583626f67c",
           "type" : "OUTPUT",
           "subType" : "DATASET"
-        }, {
-          "name" : "@InputConnection2",
-          "value" : "fed_uat_gl_pat",
-          "appNodeId" : "aafd30c2-eca1-4845-8659-c9539e9d07a4",
-          "type" : "INPUT",
-          "subType" : "CONNECTION"
-        }, {
-          "name" : "@InputConnection3",
-          "value" : "fed-uat-bb-token",
-          "appNodeId" : "45db5f09-a786-4f98-9dc1-2bef7b44ded4",
-          "type" : "INPUT",
-          "subType" : "CONNECTION"
         } ]
       },
       "outputParameters" : {
         "datasets" : [ {
-          "appNodeId" : "f5bf6ec3-c590-49ba-9807-348fcffe900b",
-          "displayName" : "git_test_app_Output",
+          "appNodeId" : "7720401b-0af7-48fd-9923-1f583626f67c",
+          "displayName" : "git_test_app_Output-3",
           "isExternal" : false,
           "objectTypeKey" : "TABLE",
           "partitionScheme" : "DAILY",
@@ -245,8 +373,8 @@
     "templateVersionId" : "45768e69-f4d7-45bb-8957-e3aa460ed3a1",
     "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
     "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
-    "createdAt" : "2026-04-28T11:14:38.126Z",
-    "updatedAt" : "2026-04-30T08:09:56.319Z",
+    "createdAt" : "2026-04-30T08:20:43.665Z",
+    "updatedAt" : "2026-04-30T08:20:43.665Z",
     "objectType" : null,
     "processType" : {
       "name" : "Spark Processor",
@@ -258,33 +386,25 @@
     },
     "processMapping" : [ ],
     "graphNodePorts" : [ {
-      "id" : "76f719f5-b913-4b9e-b100-83535d6f2e38",
-      "graphNodeId" : "b25341b8-48dd-41be-9349-8136a9811705",
+      "id" : "eb8c1c5e-89f2-4240-b9bb-d6d18948208b",
+      "graphNodeId" : "df0bedea-a14f-4ff5-992a-a6ef4e06e05b",
       "direction" : "INPUT",
       "location" : [ "left" ],
       "toLinks" : [ ],
       "fromLinks" : [ {
-        "id" : "4c5af7b1-8a42-4da4-a3ed-821761d90f3a",
-        "fromPortId" : "0c0d5f9d-4d66-43bd-9e83-c6f56f7d46f4",
-        "toPortId" : "76f719f5-b913-4b9e-b100-83535d6f2e38"
-      }, {
-        "id" : "31e8f03c-f905-4744-9e5f-de8c0aba9456",
-        "fromPortId" : "a2a8d0a3-92c0-49d3-b174-b72553a764ef",
-        "toPortId" : "76f719f5-b913-4b9e-b100-83535d6f2e38"
-      }, {
-        "id" : "e5ee17ca-9182-42bb-ab9b-418198d87bab",
+        "id" : "7fc490c2-77bc-4cf3-963d-4cd264286770",
         "fromPortId" : "f9a4b43e-d5ce-45a2-9f6f-b3d5bcdc77ad",
-        "toPortId" : "76f719f5-b913-4b9e-b100-83535d6f2e38"
+        "toPortId" : "eb8c1c5e-89f2-4240-b9bb-d6d18948208b"
       } ]
     }, {
-      "id" : "1fef68a2-2420-475b-b7e4-7fc872b07826",
-      "graphNodeId" : "b25341b8-48dd-41be-9349-8136a9811705",
+      "id" : "46424a59-9e3f-41ec-b602-d6c4d31e49c8",
+      "graphNodeId" : "df0bedea-a14f-4ff5-992a-a6ef4e06e05b",
       "direction" : "OUTPUT",
       "location" : [ "right" ],
       "toLinks" : [ {
-        "id" : "b928fd3e-d8ae-4a51-931b-10910c15568f",
-        "fromPortId" : "1fef68a2-2420-475b-b7e4-7fc872b07826",
-        "toPortId" : "79c675d1-de95-4b72-b767-65413e1acf5a"
+        "id" : "00ed8fa9-f339-4c48-9622-109b62d457d2",
+        "fromPortId" : "46424a59-9e3f-41ec-b602-d6c4d31e49c8",
+        "toPortId" : "98fea70f-c65a-4251-8a2c-02ca99bf8c7e"
       } ],
       "fromLinks" : [ ]
     } ],
@@ -341,8 +461,65 @@
       "direction" : "OUTPUT",
       "location" : [ "right" ],
       "toLinks" : [ {
-        "id" : "e5ee17ca-9182-42bb-ab9b-418198d87bab",
+        "id" : "7fc490c2-77bc-4cf3-963d-4cd264286770",
         "fromPortId" : "f9a4b43e-d5ce-45a2-9f6f-b3d5bcdc77ad",
+        "toPortId" : "eb8c1c5e-89f2-4240-b9bb-d6d18948208b"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "CONNECTION"
+  }, {
+    "id" : "15258bed-9a21-44ef-a9cc-5ba705320394",
+    "name" : "fed-uat-gh-ssh",
+    "appNodeId" : "88e73ac9-f279-4209-bcfc-ce9c319bc118",
+    "workflowId" : "94a4cfc3-a296-425f-bad8-888705cf1f80",
+    "objectTypeKey" : "GIT",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : "cdc9f473-e2c0-44a0-b71d-151f67964992",
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "basePath" : "/ssh"
+    },
+    "templateVersionId" : null,
+    "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdAt" : "2026-04-30T08:20:43.664Z",
+    "updatedAt" : "2026-04-30T08:20:43.664Z",
+    "objectType" : {
+      "name" : "Git Repo",
+      "objectCategoryKey" : "CONNECTION",
+      "icon" : {
+        "name" : "git.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "d9b4e592-a4dd-4917-8606-52d592ae66da",
+      "graphNodeId" : "15258bed-9a21-44ef-a9cc-5ba705320394",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "09b9a0ca-4709-4d12-9b29-a1b4cb2c22d3",
+      "graphNodeId" : "15258bed-9a21-44ef-a9cc-5ba705320394",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "117053de-d6b2-4071-b4b1-21891208ddf4",
+        "fromPortId" : "09b9a0ca-4709-4d12-9b29-a1b4cb2c22d3",
         "toPortId" : "76f719f5-b913-4b9e-b100-83535d6f2e38"
       } ],
       "fromLinks" : [ ]
@@ -398,9 +575,66 @@
       "direction" : "OUTPUT",
       "location" : [ "right" ],
       "toLinks" : [ {
-        "id" : "31e8f03c-f905-4744-9e5f-de8c0aba9456",
+        "id" : "dabae7bd-1aa5-4dec-95c3-d1b149344704",
         "fromPortId" : "a2a8d0a3-92c0-49d3-b174-b72553a764ef",
         "toPortId" : "76f719f5-b913-4b9e-b100-83535d6f2e38"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "CONNECTION"
+  }, {
+    "id" : "40a5788b-e67e-4632-8062-6c1f9d8e3d7e",
+    "name" : "fed-uat-gl-ssh",
+    "appNodeId" : "742e4231-c06b-4717-8df6-3ff175b31942",
+    "workflowId" : "94a4cfc3-a296-425f-bad8-888705cf1f80",
+    "objectTypeKey" : "GIT",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : "439cba91-f58a-45ad-a7c9-d927dee8849a",
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "basePath" : "ssh"
+    },
+    "templateVersionId" : null,
+    "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdAt" : "2026-04-30T09:13:18.257Z",
+    "updatedAt" : "2026-04-30T09:13:18.257Z",
+    "objectType" : {
+      "name" : "Git Repo",
+      "objectCategoryKey" : "CONNECTION",
+      "icon" : {
+        "name" : "git.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "6d268421-8b3c-49f0-a87f-082c9bf90a2c",
+      "graphNodeId" : "40a5788b-e67e-4632-8062-6c1f9d8e3d7e",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "8ca600f7-bbe2-44c5-86ab-1975a8a4d01a",
+      "graphNodeId" : "40a5788b-e67e-4632-8062-6c1f9d8e3d7e",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "1757278f-f140-444d-b7c4-2c5c3d7333ae",
+        "fromPortId" : "8ca600f7-bbe2-44c5-86ab-1975a8a4d01a",
+        "toPortId" : "547a6a2b-070f-4e38-9f12-f1043d546feb"
       } ],
       "fromLinks" : [ ]
     } ],
@@ -448,9 +682,9 @@
       "direction" : "OUTPUT",
       "location" : [ "right" ],
       "toLinks" : [ {
-        "id" : "4c5af7b1-8a42-4da4-a3ed-821761d90f3a",
+        "id" : "5ea6fdd4-45c3-4920-b2c0-20d7c972045f",
         "fromPortId" : "0c0d5f9d-4d66-43bd-9e83-c6f56f7d46f4",
-        "toPortId" : "76f719f5-b913-4b9e-b100-83535d6f2e38"
+        "toPortId" : "547a6a2b-070f-4e38-9f12-f1043d546feb"
       } ],
       "fromLinks" : [ ]
     }, {
@@ -488,7 +722,7 @@
     "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
     "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
     "createdAt" : "2026-04-28T11:14:38.137Z",
-    "updatedAt" : "2026-04-30T08:00:31.919Z",
+    "updatedAt" : "2026-04-30T08:21:08.213Z",
     "objectType" : {
       "name" : "Table",
       "objectCategoryKey" : "DATASET",
@@ -519,5 +753,341 @@
       "fromLinks" : [ ]
     } ],
     "objectCategoryKey" : "DATASET"
+  }, {
+    "id" : "f2f183c5-d42a-4553-a940-b276a47cbabd",
+    "name" : "git_test_app_Output-2",
+    "appNodeId" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15",
+    "workflowId" : "94a4cfc3-a296-425f-bad8-888705cf1f80",
+    "objectTypeKey" : "TABLE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : "c1501c4c-0ecc-424c-8def-a4b0e957a739",
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true,
+        "isExternal" : false
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdAt" : "2026-04-30T08:20:43.688Z",
+    "updatedAt" : "2026-04-30T09:13:18.281Z",
+    "objectType" : {
+      "name" : "Table",
+      "objectCategoryKey" : "DATASET",
+      "icon" : {
+        "name" : "table.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "c4bf59a3-f37d-49c0-922a-de1b49b5e568",
+      "graphNodeId" : "f2f183c5-d42a-4553-a940-b276a47cbabd",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "d4b41153-d935-4c0f-856f-ebf1a354cf8f",
+        "fromPortId" : "75fa4029-858e-4f22-939f-3d561fc9e44a",
+        "toPortId" : "c4bf59a3-f37d-49c0-922a-de1b49b5e568"
+      } ]
+    }, {
+      "id" : "c197c0a2-5928-491e-bfca-ec40da96b8bb",
+      "graphNodeId" : "f2f183c5-d42a-4553-a940-b276a47cbabd",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "DATASET"
+  }, {
+    "id" : "4174f22c-2ba5-4545-97d6-c2af0c6eea98",
+    "name" : "git_test_app_Output-3",
+    "appNodeId" : "7720401b-0af7-48fd-9923-1f583626f67c",
+    "workflowId" : "94a4cfc3-a296-425f-bad8-888705cf1f80",
+    "objectTypeKey" : "TABLE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : "a85a726d-c023-4f22-a7f4-d980d35febec",
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true,
+        "isExternal" : false
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdAt" : "2026-04-30T08:20:43.689Z",
+    "updatedAt" : "2026-04-30T08:20:43.689Z",
+    "objectType" : {
+      "name" : "Table",
+      "objectCategoryKey" : "DATASET",
+      "icon" : {
+        "name" : "table.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "98fea70f-c65a-4251-8a2c-02ca99bf8c7e",
+      "graphNodeId" : "4174f22c-2ba5-4545-97d6-c2af0c6eea98",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "00ed8fa9-f339-4c48-9622-109b62d457d2",
+        "fromPortId" : "46424a59-9e3f-41ec-b602-d6c4d31e49c8",
+        "toPortId" : "98fea70f-c65a-4251-8a2c-02ca99bf8c7e"
+      } ]
+    }, {
+      "id" : "04634ad1-3a27-4665-bae8-14a19a687b36",
+      "graphNodeId" : "4174f22c-2ba5-4545-97d6-c2af0c6eea98",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "DATASET"
+  }, {
+    "id" : "b25341b8-48dd-41be-9349-8136a9811705",
+    "name" : "github",
+    "appNodeId" : "523884cb-b555-4af5-a508-7b1c00b5b7a6",
+    "workflowId" : "94a4cfc3-a296-425f-bad8-888705cf1f80",
+    "objectTypeKey" : null,
+    "processTypeKey" : "SPARK_PROCESSOR",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "COMPLETED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "filters" : { },
+      "parameters" : {
+        "language" : "PYTHON",
+        "fileName" : null,
+        "sparkScript" : "print(\"With PAT\")\nconn = \"@InputConnection2\"\nconnectionName = synutils.connection().getConnectionParam(conn, \"connectionName\")\nconnectionType = synutils.connection().getConnectionParam(conn, \"connectionType\")\n\nrepoUrl = synutils.connection().getConnectionParam(conn, \"repoUrl\")\noauthToken = synutils.connection().getConnectionParam(conn, \"oauthToken\")\npersonalAccessToken = synutils.connection().getConnectionParam(conn, \"personalAccessToken\")\n\nsshKey = synutils.connection().getConnectionParam(conn, \"sshKey\")\nbranch = synutils.connection().getConnectionParam(conn, \"branch\")\nbasePath = synutils.connection().getConnectionParam(conn, \"basePath\")\nscmType = synutils.connection().getConnectionParam(conn, \"scmType\")\n\nprint(\"connectionName:\", connectionName)\nprint(\"connectionType:\", connectionType)\nprint(\"repoUrl:\", repoUrl)\nprint(\"oauthToken:\", oauthToken)\nprint(\"personalAccessToken:\", personalAccessToken)\nprint(\"sshKey:\", sshKey)\nprint(\"branch:\", branch)\nprint(\"basePath:\", basePath)\nprint(\"scmType:\", scmType)",
+        "libraryConfigs" : [ {
+          "name" : "",
+          "version" : ""
+        } ],
+        "version" : "3.9",
+        "customCondaScript" : null,
+        "codeParams" : [ {
+          "name" : "@OutputTable1",
+          "value" : "@database.git_test_app_output",
+          "appNodeId" : "f5bf6ec3-c590-49ba-9807-348fcffe900b",
+          "type" : "OUTPUT",
+          "subType" : "DATASET"
+        }, {
+          "name" : "@InputConnection1",
+          "value" : "fed-uat-github",
+          "appNodeId" : "30ef4b6f-1b5d-4e98-8978-2164c20dc4e6",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        }, {
+          "name" : "@InputConnection2",
+          "value" : "fed-uat-gh-ssh",
+          "appNodeId" : "88e73ac9-f279-4209-bcfc-ce9c319bc118",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        } ]
+      },
+      "outputParameters" : {
+        "datasets" : [ {
+          "appNodeId" : "f5bf6ec3-c590-49ba-9807-348fcffe900b",
+          "displayName" : "git_test_app_Output",
+          "isExternal" : false,
+          "objectTypeKey" : "TABLE",
+          "partitionScheme" : "DAILY",
+          "loadToBigQuery" : false,
+          "loadToRedshift" : false,
+          "fileFormat" : "PARQUET",
+          "tableName" : "git_test_app_output",
+          "location" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/ravi_qa_ds_dev/git_test_app/git_test_app_output"
+        } ]
+      }
+    },
+    "templateVersionId" : "45768e69-f4d7-45bb-8957-e3aa460ed3a1",
+    "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdAt" : "2026-04-28T11:14:38.126Z",
+    "updatedAt" : "2026-04-30T08:23:25.569Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "Spark Processor",
+      "schemaAware" : false,
+      "runtime" : "SPARK",
+      "icon" : {
+        "key" : "SPARK_PROCESSOR"
+      }
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "76f719f5-b913-4b9e-b100-83535d6f2e38",
+      "graphNodeId" : "b25341b8-48dd-41be-9349-8136a9811705",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "dabae7bd-1aa5-4dec-95c3-d1b149344704",
+        "fromPortId" : "a2a8d0a3-92c0-49d3-b174-b72553a764ef",
+        "toPortId" : "76f719f5-b913-4b9e-b100-83535d6f2e38"
+      }, {
+        "id" : "117053de-d6b2-4071-b4b1-21891208ddf4",
+        "fromPortId" : "09b9a0ca-4709-4d12-9b29-a1b4cb2c22d3",
+        "toPortId" : "76f719f5-b913-4b9e-b100-83535d6f2e38"
+      } ]
+    }, {
+      "id" : "1fef68a2-2420-475b-b7e4-7fc872b07826",
+      "graphNodeId" : "b25341b8-48dd-41be-9349-8136a9811705",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "b928fd3e-d8ae-4a51-931b-10910c15568f",
+        "fromPortId" : "1fef68a2-2420-475b-b7e4-7fc872b07826",
+        "toPortId" : "79c675d1-de95-4b72-b767-65413e1acf5a"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "SPARK_PROCESSOR"
+    }
+  }, {
+    "id" : "0540682b-ad69-4cc4-a04c-1860c8b1dbad",
+    "name" : "gitlab",
+    "appNodeId" : "4ce2fecf-6a56-4e00-a0ee-90ab3dca3750",
+    "workflowId" : "94a4cfc3-a296-425f-bad8-888705cf1f80",
+    "objectTypeKey" : null,
+    "processTypeKey" : "SPARK_PROCESSOR",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "FAILED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "filters" : { },
+      "parameters" : {
+        "language" : "PYTHON",
+        "fileName" : null,
+        "sparkScript" : "print(\"With PAT\")\nconn = \"@InputConnection2\"\nconnectionName = synutils.connection().getConnectionParam(conn, \"connectionName\")\nconnectionType = synutils.connection().getConnectionParam(conn, \"connectionType\")\n\nrepoUrl = synutils.connection().getConnectionParam(conn, \"repoUrl\")\noauthToken = synutils.connection().getConnectionParam(conn, \"oauthToken\")\npersonalAccessToken = synutils.connection().getConnectionParam(conn, \"personalAccessToken\")\n\nsshKey = synutils.connection().getConnectionParam(conn, \"sshKey\")\nbranch = synutils.connection().getConnectionParam(conn, \"branch\")\nbasePath = synutils.connection().getConnectionParam(conn, \"basePath\")\nscmType = synutils.connection().getConnectionParam(conn, \"scmType\")\n\nprint(\"connectionName:\", connectionName)\nprint(\"connectionType:\", connectionType)\nprint(\"repoUrl:\", repoUrl)\nprint(\"oauthToken:\", oauthToken)\nprint(\"personalAccessToken:\", personalAccessToken)\nprint(\"sshKey:\", sshKey)\nprint(\"branch:\", branch)\nprint(\"basePath:\", basePath)\nprint(\"scmType:\", scmType)",
+        "libraryConfigs" : [ {
+          "name" : "",
+          "version" : ""
+        } ],
+        "version" : "3.9",
+        "customCondaScript" : null,
+        "codeParams" : [ {
+          "name" : "@InputConnection1",
+          "value" : "fed_uat_gl_pat",
+          "appNodeId" : "aafd30c2-eca1-4845-8659-c9539e9d07a4",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        }, {
+          "name" : "@OutputTable1",
+          "value" : "@database.git_test_app_output",
+          "appNodeId" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15",
+          "type" : "OUTPUT",
+          "subType" : "DATASET"
+        }, {
+          "name" : "@InputConnection2",
+          "value" : "fed-uat-gl-ssh",
+          "appNodeId" : "742e4231-c06b-4717-8df6-3ff175b31942",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        } ]
+      },
+      "outputParameters" : {
+        "datasets" : [ {
+          "appNodeId" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15",
+          "displayName" : "git_test_app_Output-2",
+          "isExternal" : false,
+          "objectTypeKey" : "TABLE",
+          "partitionScheme" : "DAILY",
+          "loadToBigQuery" : false,
+          "loadToRedshift" : false,
+          "fileFormat" : "PARQUET",
+          "tableName" : "git_test_app_output",
+          "location" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/ravi_qa_ds_dev/git_test_app/git_test_app_output"
+        } ]
+      }
+    },
+    "templateVersionId" : "45768e69-f4d7-45bb-8957-e3aa460ed3a1",
+    "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdAt" : "2026-04-30T08:20:43.665Z",
+    "updatedAt" : "2026-04-30T09:23:00.262Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "Spark Processor",
+      "schemaAware" : false,
+      "runtime" : "SPARK",
+      "icon" : {
+        "key" : "SPARK_PROCESSOR"
+      }
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "547a6a2b-070f-4e38-9f12-f1043d546feb",
+      "graphNodeId" : "0540682b-ad69-4cc4-a04c-1860c8b1dbad",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "5ea6fdd4-45c3-4920-b2c0-20d7c972045f",
+        "fromPortId" : "0c0d5f9d-4d66-43bd-9e83-c6f56f7d46f4",
+        "toPortId" : "547a6a2b-070f-4e38-9f12-f1043d546feb"
+      }, {
+        "id" : "1757278f-f140-444d-b7c4-2c5c3d7333ae",
+        "fromPortId" : "8ca600f7-bbe2-44c5-86ab-1975a8a4d01a",
+        "toPortId" : "547a6a2b-070f-4e38-9f12-f1043d546feb"
+      } ]
+    }, {
+      "id" : "75fa4029-858e-4f22-939f-3d561fc9e44a",
+      "graphNodeId" : "0540682b-ad69-4cc4-a04c-1860c8b1dbad",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "d4b41153-d935-4c0f-856f-ebf1a354cf8f",
+        "fromPortId" : "75fa4029-858e-4f22-939f-3d561fc9e44a",
+        "toPortId" : "c4bf59a3-f37d-49c0-922a-de1b49b5e568"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "SPARK_PROCESSOR"
+    }
   } ]
 }

@@ -19,13 +19,141 @@
   "deletedAt" : null,
   "columns" : [ ],
   "dataWarehouses" : [ {
-    "id" : "a3c0a309-a6ed-4bd2-bf61-4526755e4899",
+    "id" : "46907c67-2dfd-4908-ae71-57753766b84f",
     "datasetId" : "cfdae9ba-8932-42c5-a81c-7ba23dfd9e25",
     "warehouseType" : "SYNTASA_EVENT_STORE",
     "dataset_id" : "cfdae9ba-8932-42c5-a81c-7ba23dfd9e25"
   } ],
   "objectTypeKey" : "TABLE",
   "appNodeId" : "f5bf6ec3-c590-49ba-9807-348fcffe900b",
+  "eventStore" : {
+    "id" : "999e0796-361f-4b62-b854-de3a34a5ecff",
+    "name" : "ravi_qa_ds",
+    "type" : "EVENTSTORE",
+    "key" : "ravi_qa_ds",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/ravi_qa_ds_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/ravi_qa_ds_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/ravi_qa_ds_snap",
+    "snapshotDatabase" : "ravi_qa_ds_snap",
+    "developmentDatabase" : "ravi_qa_ds_dev",
+    "productionDatabase" : "ravi_qa_ds_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC",
+      "grants" : [ {
+        "groupId" : "11111111-1111-1111-1111-111111111111",
+        "permission" : 10
+      } ]
+    },
+    "ownerId" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdAt" : "2025-09-01T17:23:24.839Z",
+    "updatedAt" : "2025-09-01T17:23:24.839Z",
+    "grants" : {
+      "canUse" : false,
+      "canView" : true,
+      "canExecute" : false,
+      "canEdit" : true,
+      "canDeploy" : false,
+      "canManage" : true
+    }
+  }
+}, {
+  "id" : "c1501c4c-0ecc-424c-8def-a4b0e957a739",
+  "name" : "git_test_app_output",
+  "database" : "ravi_qa_ds_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "creationSource" : "APP",
+  "location" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/ravi_qa_ds_dev/git_test_app/git_test_app_output",
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "d893c3b1-4c45-4b53-bab7-df2ac5713147",
+    "datasetId" : "c1501c4c-0ecc-424c-8def-a4b0e957a739",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "c1501c4c-0ecc-424c-8def-a4b0e957a739"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "f1de0fdb-8b25-45a5-a7b9-d7c21f89bc15",
+  "eventStore" : {
+    "id" : "999e0796-361f-4b62-b854-de3a34a5ecff",
+    "name" : "ravi_qa_ds",
+    "type" : "EVENTSTORE",
+    "key" : "ravi_qa_ds",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/ravi_qa_ds_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/ravi_qa_ds_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/ravi_qa_ds_snap",
+    "snapshotDatabase" : "ravi_qa_ds_snap",
+    "developmentDatabase" : "ravi_qa_ds_dev",
+    "productionDatabase" : "ravi_qa_ds_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC",
+      "grants" : [ {
+        "groupId" : "11111111-1111-1111-1111-111111111111",
+        "permission" : 10
+      } ]
+    },
+    "ownerId" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "modifiedById" : "58202e0b-75d7-4fe6-b433-4d94c95faf88",
+    "createdAt" : "2025-09-01T17:23:24.839Z",
+    "updatedAt" : "2025-09-01T17:23:24.839Z",
+    "grants" : {
+      "canUse" : false,
+      "canView" : true,
+      "canExecute" : false,
+      "canEdit" : true,
+      "canDeploy" : false,
+      "canManage" : true
+    }
+  }
+}, {
+  "id" : "a85a726d-c023-4f22-a7f4-d980d35febec",
+  "name" : "git_test_app_output",
+  "database" : "ravi_qa_ds_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "creationSource" : "APP",
+  "location" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/ravi_qa_ds_dev/git_test_app/git_test_app_output",
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "74b391e2-f43a-4fbb-9c67-beee2185c890",
+    "datasetId" : "a85a726d-c023-4f22-a7f4-d980d35febec",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "a85a726d-c023-4f22-a7f4-d980d35febec"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "7720401b-0af7-48fd-9923-1f583626f67c",
   "eventStore" : {
     "id" : "999e0796-361f-4b62-b854-de3a34a5ecff",
     "name" : "ravi_qa_ds",
